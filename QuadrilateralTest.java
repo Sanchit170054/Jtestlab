@@ -18,7 +18,7 @@ public class QuadrilateralTest {
 		rectangle1 = new Quadrilateral(new Point(4, 2), new Point(3, 4), new Point(9, 7), new Point(10, 5));
 		rectangle2 = new Quadrilateral(new Point(-2, -1), new Point(-2, 1), new Point(2, 1), new Point(2, -1));
 		quad = new Quadrilateral(new Point(-2, -2), new Point(-1, 1), new Point(1, 1), new Point(1, -1));
-	} 
+	}
 	
 	@Test
 	public void testRectangle() {
@@ -40,4 +40,4 @@ public class QuadrilateralTest {
 		assertFalse(fmsg, rectangle2.isSquare());
 		assertFalse(fmsg, quad.isSquare());
 	}
-} 
+}
