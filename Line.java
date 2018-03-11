@@ -17,6 +17,6 @@ public class Line {
 	}
 	
 	public Boolean isSameLengthAs(Line l) {
-	return (Math.abs(getLength() - l.getLength()) < 0.00001);
+		return (Math.abs(getLength() - l.getLength()) < 0.00001);
 	}
 }
