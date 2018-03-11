@@ -6,7 +6,7 @@ public class Quadrilateral {
 	
 	Quadrilateral(Point p1, Point p2, Point p3, Point p4) {
 		this.p1 = p1;
-	    this.p2 = p2;
+		this.p2 = p2;
 		this.p3 = p3;
 		this.p4 = p4;
 		this.l1 = new Line(p1, p2);
@@ -21,7 +21,7 @@ public class Quadrilateral {
 		Vector2D v3 = l3.getVector();
 		Vector2D v4 = l4.getVector();
 		
-		return (v1.isOrthogonalTo(v2) &&
+		return (v1.isOrthogonalTo(v4) &&
 				v2.isOrthogonalTo(v3) &&
 				v3.isOrthogonalTo(v4) &&
 				v4.isOrthogonalTo(v1));
@@ -29,6 +29,7 @@ public class Quadrilateral {
 	
 	public Boolean isSquare() {
 		return (isRectangle() &&
-			 l1.isSameLengthAs(l3));
-	} 
+				l1.isSameLengthAs(l2));
+	}
+
 }
